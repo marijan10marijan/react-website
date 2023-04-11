@@ -1,0 +1,78 @@
+.main{
+    padding-block: 10rem;
+    gap: 5rem;
+
+    &__left,
+    &__right{
+        flex: 1;
+    }
+
+    &__left{
+        align-self: flex-start;
+
+        &-title{
+            font-size: 3.5rem;
+            line-height: 1.075em;
+            font-weight: 400;
+            letter-spacing: -.04em;
+            font-family:$font-family, sans-serif;
+            margin-block-end: 1.5rem;
+
+            &-span{
+                color: $btn-clr;
+            }
+        }
+
+        &-text{
+            margin-block-end: 2rem;
+            font-size: 1rem;
+            line-height: 166%;
+            letter-spacing: -.02em;
+            font-family: $font-family;
+        }
+    }
+    &__right{
+        align-self: flex-end;
+        padding-block-start: 5rem;
+    }
+
+    &__right img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:990px){
+    .main{
+        flex-direction: column;
+        padding-block: 5rem;
+        gap: 1rem;
+
+        &__left-title{
+            font-size: 2.5rem;
+        }
+
+        &__left-text{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width:770px){
+    .main{
+        &__left-text{
+            width: 85%;
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .main{
+        &__left-title{
+            font-size: 2rem;
+        }
+
+        &__left-text{
+            width: 95%;
+        }
+    }
+}

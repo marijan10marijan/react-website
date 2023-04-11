@@ -1,0 +1,32 @@
+.btn{
+    position: relative;
+    padding: 11px 36px;
+    border: 1px solid $btn-clr;
+    border-radius: 30px;
+    background-color: $bg-clr;
+    color: $text-clr;
+    font-size: 16px;
+    line-height: 166%;
+    text-align: center;
+    letter-spacing: -.04em;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+    &:hover{
+        background-color: $btn-clr;
+        color: $bg-clr;
+        transform: translate(5px, -5px)
+        
+    }
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    border: 1px solid $btn-clr;
+    border-radius: 45px;
+    bottom: -7px;
+    right: 0;
+}

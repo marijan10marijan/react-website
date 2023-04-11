@@ -1,0 +1,46 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $bg-clr;
+    color: $text-clr;
+    font-family: sans-serif;
+}
+
+h1,h2,h3{
+    margin-block-end: 1rem;
+}
+p{
+    margin-block-end: .5rem;
+}
+
+.container{
+    width: min(1266px, 90%);
+    margin-inline: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
