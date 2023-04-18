@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <nav className='container flex nav' id='header'>
-        <a className='nav__link' href="#header">
+        <a className='nav__link' href="#">
             <img src={Logo} alt="image of our logo" />
         </a>
         <div className="nav__button">
